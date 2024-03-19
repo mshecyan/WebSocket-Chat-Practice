@@ -1,0 +1,26 @@
+.message-box::-webkit-scrollbar {
+    width: 0;
+  }
+
+.message-item {
+    width: fit-content;
+    min-width: 120px;
+    max-width: 65%;
+    background-color: #e0ebfb;
+}
+
+.message-item .send-time {
+    font-size: 0.8rem;
+}
+
+.join-title {
+    font-size: 0.8rem;
+}
+
+.input-group {
+    height: 50px;
+}
+
+#send-button {
+    width: 50px;
+}

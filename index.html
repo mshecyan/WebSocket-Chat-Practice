@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid vh-100 py-3 bg-light">
+        <div
+            class="container-xl mw-50 d-flex flex-column justify-content-between h-100 p-3 rounded-3 bg-white border">
+            <div class="container-fluid message-box d-flex flex-column h-100 p-0 mb-2 overflow-y-scroll"></div>
+            <div class="input-group">
+                <input type="text" class="form-control" id="message-text" placeholder="Текст сообщения"
+                    aria-label="Текст сообщения" aria-describedby="send-button">
+                <button class="btn btn-outline-primary d-flex align-items-center justify-content-center" type="button" id="send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor"
+                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="usernameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false"    >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Введите имя пользователя:</h1>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="message-username" placeholder="Имя"
+                    aria-label="Имя">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="save-username-button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" id="show-modal-button" class="btn btn-primary d-none" data-bs-toggle="modal"
+        data-bs-target="#usernameModal"></button>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+<script src="script/script.js"></script>
+
+</html>
